@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Plate Carrier | 3DMODSHOP</title>
+  <meta name="description" content="Simple Plate Carrier 3D model product page for 3DMODSHOP with preview images, asset specs, pricing, and download placeholder.">
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="model.css?v=mobile-qa-1">
+</head>
+<body>
+  <header class="model-header">
+    <a class="brand" href="../../../../index.html">
+      <span>3D</span>
+      <strong>3DMODSHOP</strong>
+    </a>
+    <nav>
+      <a href="../../../../index.html#assets">Shop</a>
+      <a href="../../../../index.html#categories">Categories</a>
+      <a href="../../../../index.html#license">License</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ARMOR / VEST PLATFORM</p>
+        <h1>Simple Plate Carrier</h1>
+        <p class="lead">A lightweight tactical vest asset for FPS characters, loadout menus, armory props, and military kitbash scenes.</p>
+        <div class="price-badge">
+          <span>Model Price</span>
+          <strong>$2</strong>
+        </div>
+        <div class="buy-row">
+          <a href="https://payhip.com/b/3T7hw" class="payhip-buy-button asset-buy-button" data-target-variant="1787809488080" data-theme="grey" data-product="3T7hw">Buy GLB</a>
+          <a href="https://payhip.com/b/3T7hw" class="payhip-buy-button asset-buy-button" data-target-variant="1787809504063" data-theme="grey" data-product="3T7hw">Buy OBJ</a>
+        </div>
+      </div>
+
+      <figure class="hero-image">
+        <div id="plateCarrierViewer" class="model-stage" role="img" aria-label="Interactive Simple Plate Carrier 3D model preview">
+          <img src="assets/Main.png" alt="" aria-hidden="true">
+          <div id="plateCarrierLoading" class="model-progress">
+            <span>Loading 3D preview</span>
+          </div>
+        </div>
+        <figcaption>Simple Plate Carrier interactive model preview</figcaption>
+      </figure>
+    </section>
+
+    <section class="preview-strip">
+      <figure>
+        <img src="assets/Prev1.png" alt="Simple Plate Carrier secondary angle preview">
+        <figcaption>Secondary asset preview</figcaption>
+      </figure>
+      <article>
+        <p class="eyebrow">Asset Notes</p>
+        <h2>Clean tactical base layer.</h2>
+        <p>Built as a simple armor piece for characters, NPC kits, marketplace renders, and prototype loadouts. The form stays readable from gameplay distance while leaving room for future pouches, patches, radios, and faction variants.</p>
+      </article>
+    </section>
+
+    <section class="details-grid">
+      <article>
+        <p class="eyebrow">Use Case</p>
+        <h2>Character-ready armor.</h2>
+        <p>This vest works as a quick tactical base for modern shooter prototypes, character customization screens, and cinematic background loadouts.</p>
+        <p>The page keeps the product presentation visual and game-asset focused, not real-world protective equipment guidance.</p>
+      </article>
+
+      <article>
+        <p class="eyebrow">Asset Build</p>
+        <h2>Included Specs</h2>
+        <ul class="spec-list">
+          <li>Format: GLB file included in the asset folder</li>
+          <li>Preview images: front render and secondary angle</li>
+          <li>Use case: characters, inventory renders, armory scenes, and kitbash packs</li>
+          <li>Category: armor / tactical vest</li>
+          <li>License: commercial game asset placeholder</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="loadout-panel">
+      <div>
+        <p class="eyebrow">Model Directory</p>
+        <h2>Simple Plate Carrier page</h2>
+        <p>This page lives at <code>models/armor/Vests/SimplePlateCarrier/</code> with its preview images and GLB asset inside the local <code>assets/</code> folder.</p>
+      </div>
+      <a class="back-link" href="../../../../index.html">Back to storefront</a>
+    </section>
+  </main>
+  <script src="assets/three.min.js"></script>
+  <script src="assets/OrbitControls.js"></script>
+  <script src="assets/GLTFLoader.js"></script>
+  <script src="assets/simple-plate-carrier-glb-data.js"></script>
+  <script src="assets/simple-plate-carrier-viewer.js"></script>
+  <script>
+    (() => {
+      const compactPayhipButtons = () => {
+        document.querySelectorAll(".asset-buy-button").forEach((button) => {
+          button.style.setProperty("display", "inline-flex", "important");
+          button.style.setProperty("box-sizing", "border-box", "important");
+          button.style.setProperty("width", "8.6rem", "important");
+          button.style.setProperty("min-width", "0", "important");
+          button.style.setProperty("max-width", "8.6rem", "important");
+          button.style.setProperty("height", "3rem", "important");
+          button.style.setProperty("min-height", "3rem", "important");
+          button.style.setProperty("max-height", "3rem", "important");
+          button.style.setProperty("align-items", "center", "important");
+          button.style.setProperty("justify-content", "center", "important");
+          button.style.setProperty("padding", "0", "important");
+          button.style.setProperty("line-height", "1", "important");
+          button.style.setProperty("overflow", "hidden", "important");
+        });
+      };
+
+      window.addEventListener("load", compactPayhipButtons);
+      setTimeout(compactPayhipButtons, 600);
+      setTimeout(compactPayhipButtons, 1800);
+    })();
+  </script>
+</body>
+</html>
