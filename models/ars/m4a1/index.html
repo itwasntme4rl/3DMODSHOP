@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M4A1 | 3DMODSHOP</title>
+  <meta name="description" content="M4A1 3D model product page for 3DMODSHOP with history notes, asset specs, pricing, and download placeholders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="model.css?v=mobile-qa-1">
+</head>
+<body>
+  <header class="model-header">
+    <a class="brand" href="../../../index.html">
+      <span>3D</span>
+      <strong>3DMODSHOP</strong>
+    </a>
+    <nav>
+      <a href="../../../index.html#assets">Shop</a>
+      <a href="../../../index.html#categories">Categories</a>
+      <a href="../../../index.html#license">License</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ARS / RIFLE PLATFORM</p>
+        <h1>M4A1</h1>
+        <p class="lead">A game-ready tactical rifle asset for mil-sim scenes, FPS prototypes, inventory renders, and cinematic loadout screens.</p>
+        <div class="price-badge">
+          <span>Model Price</span>
+          <strong>$10</strong>
+        </div>
+        <div class="buy-row">
+          <a href="https://payhip.com/b/4EvS7" class="payhip-buy-button asset-buy-button" data-target-variant="1787808217937" data-theme="grey" data-product="4EvS7">Buy GLB</a>
+          <a href="https://payhip.com/b/4EvS7" class="payhip-buy-button asset-buy-button" data-target-variant="1787808615288" data-theme="grey" data-product="4EvS7">Buy OBJ</a>
+        </div>
+      </div>
+
+      <figure class="hero-image">
+        <div id="m4a1Viewer" class="model-stage" role="img" aria-label="Interactive M4A1 3D model preview">
+          <img src="assets/main.png" alt="" aria-hidden="true">
+          <div id="m4a1Loading" class="model-progress">
+            <span>Loading 3D preview</span>
+          </div>
+        </div>
+        <figcaption>M4A1 interactive model preview</figcaption>
+      </figure>
+    </section>
+
+    <section class="details-grid">
+      <article>
+        <p class="eyebrow">Short History</p>
+        <h2>Platform Background</h2>
+        <p>The M4A1 is a compact carbine variant from the AR-15/M16 family, widely recognized through modern military, training, and simulation references. For game art, it is useful because the silhouette reads quickly: collapsible stock, rail system, magazine profile, and modular accessory points.</p>
+        <p>This product page keeps the history light and reference-focused. It is meant for visual worldbuilding and game-development context, not real-world construction or weapon operation.</p>
+      </article>
+
+      <article>
+        <p class="eyebrow">Asset Build</p>
+        <h2>Included Specs</h2>
+        <ul class="spec-list">
+          <li>Formats: GLB web preview, FBX, OBJ, and Blend placeholders</li>
+          <li>Materials: PBR metalness workflow placeholder</li>
+          <li>Textures: 4K albedo, normal, roughness placeholders</li>
+          <li>Use case: FPS, third-person, render, and marketplace mockups</li>
+          <li>License: commercial game asset placeholder</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="loadout-panel">
+      <div>
+        <p class="eyebrow">Model Directory</p>
+        <h2>Self-contained product page</h2>
+        <p>This page lives at <code>models/ars/m4a1/</code>. Its CSS and image are inside the same folder, so the product page stays easier to maintain even if the homepage changes later.</p>
+      </div>
+      <a class="back-link" href="../../../index.html">Back to storefront</a>
+    </section>
+  </main>
+  <script src="assets/three.min.js?v=draco-1"></script>
+  <script src="assets/OrbitControls.js?v=draco-1"></script>
+  <script src="assets/GLTFLoader.js?v=draco-1"></script>
+  <script src="assets/draco-decoder-inline.js?v=draco-2"></script>
+  <script src="assets/DRACOLoader.js?v=draco-2"></script>
+  <script src="assets/m4a1-glb-data.js?v=draco-1"></script>
+  <script src="assets/m4a1-viewer.js?v=draco-2"></script>
+  <script>
+    (() => {
+      const compactPayhipButtons = () => {
+        document.querySelectorAll(".asset-buy-button").forEach((button) => {
+          button.style.setProperty("display", "inline-flex", "important");
+          button.style.setProperty("box-sizing", "border-box", "important");
+          button.style.setProperty("width", "8.6rem", "important");
+          button.style.setProperty("min-width", "0", "important");
+          button.style.setProperty("max-width", "8.6rem", "important");
+          button.style.setProperty("height", "3rem", "important");
+          button.style.setProperty("min-height", "3rem", "important");
+          button.style.setProperty("max-height", "3rem", "important");
+          button.style.setProperty("align-items", "center", "important");
+          button.style.setProperty("justify-content", "center", "important");
+          button.style.setProperty("padding", "0", "important");
+          button.style.setProperty("line-height", "1", "important");
+          button.style.setProperty("overflow", "hidden", "important");
+        });
+      };
+
+      window.addEventListener("load", compactPayhipButtons);
+      setTimeout(compactPayhipButtons, 600);
+      setTimeout(compactPayhipButtons, 1800);
+    })();
+  </script>
+</body>
+</html>
