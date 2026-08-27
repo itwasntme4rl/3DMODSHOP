@@ -2,7 +2,7 @@
   const stage = document.getElementById("glock19xViewer");
   const loading = document.getElementById("glock19xLoading");
 
-  if (!stage || !window.THREE || !window.GLOCK19X_GLB_DATA_URI) {
+  if (!stage || !window.THREE || !window.THREE.GLTFLoader) {
     if (loading) {
       loading.textContent = "3D preview unavailable";
     }
@@ -40,6 +40,13 @@
   scene.add(fill);
 
   const loader = new THREE.GLTFLoader();
+  let previewLoaded = false;
+  if (window.THREE.DRACOLoader) {
+    const dracoLoader = new THREE.DRACOLoader();
+    dracoLoader.setDecoderPath("assets/draco/");
+    dracoLoader.setDecoderConfig({ type: "js" });
+    loader.setDRACOLoader(dracoLoader);
+  }
 
   function resize() {
     const rect = stage.getBoundingClientRect();
@@ -82,8 +89,9 @@
   animate();
 
   loader.load(
-    window.GLOCK19X_GLB_DATA_URI,
+    window.GLOCK19X_GLB_DATA_URI || "assets/Glock19x.glb",
     function (gltf) {
+      previewLoaded = true;
       scene.add(gltf.scene);
       frameModel(gltf.scene);
       resize();
@@ -98,4 +106,10 @@
       }
     }
   );
+
+  setTimeout(function () {
+    if (!previewLoaded && loading) {
+      loading.textContent = "Still loading preview";
+    }
+  }, 10000);
 })();
