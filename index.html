@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DMODSHOP | Tactical 3D Asset Marketplace</title>
+  <meta name="description" content="3DMODSHOP sells downloadable tactical 3D weapon and game-development assets with PBR materials, engine-ready formats, and production-focused details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=mobile-qa-1">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="3DMODSHOP home">
+        <span class="brand-mark">3D</span>
+        <span>
+          <strong>3DMODSHOP</strong>
+          <small>Tactical Asset Depot</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#assets">Assets</a>
+        <a href="#categories">Categories</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#license">License</a>
+      </nav>
+
+      <button class="cart-button" type="button" data-cart-toggle>
+        <span class="cart-icon" aria-hidden="true">▣</span>
+        <span>Cart</span>
+        <strong data-cart-count>0</strong>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">MIL-SIM READY / GAME ASSET DEPOT</p>
+          <h1>Tactical 3D assets for realistic combat games.</h1>
+          <p class="hero-copy">Weapon systems, attachments, armory props, and production-ready asset packs presented with a grounded military interface built for game developers.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#assets">Browse Assets</a>
+            <a class="button ghost" href="#pipeline">Asset Specs</a>
+          </div>
+          <div class="hero-stats" aria-label="Marketplace highlights">
+            <span><strong>4K</strong>PBR textures</span>
+            <span><strong>FBX</strong>OBJ + Blend</span>
+            <span><strong>LOD</strong>Game optimized</span>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Featured 3D asset previews">
+          <article class="preview-card large">
+            <img src="assets/images/AR15/main.png" alt="M4A1 3D firearm game asset preview">
+            <div>
+              <span>Featured Drop</span>
+              <strong>M4A1</strong>
+            </div>
+          </article>
+          <article class="preview-card offset">
+            <img src="assets/images/AR15/preview2.png" alt="3D tactical weapon asset preview">
+            <div>
+              <span>UPCOMING Drop</span>
+              <strong>Glock19x</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section band" id="assets">
+        <div class="section-heading">
+          <p class="eyebrow">Featured assets</p>
+          <h2>Built for realtime production.</h2>
+          <p>Preview, filter, and open product pages for each asset. Checkout buttons belong on product pages so model files are never linked directly from the storefront.</p>
+        </div>
+
+        <div class="store-toolbar" id="categories">
+          <label class="search-box">
+            <span>Search</span>
+            <input type="search" placeholder="Search rifles, props, kits..." data-search>
+          </label>
+          <div class="filter-group" role="group" aria-label="Asset category filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="firearms">Firearms</button>
+            <button class="filter-button" type="button" data-filter="armor">Armor</button>
+            <button class="filter-button" type="button" data-filter="handguns">Handguns</button>
+            <button class="filter-button" type="button" data-filter="attachments">Attachments</button>
+            <button class="filter-button" type="button" data-filter="props">Props</button>
+            <button class="filter-button" type="button" data-filter="packs">Packs</button>
+          </div>
+        </div>
+
+        <div class="asset-grid" data-product-grid>
+          <article class="asset-card featured" data-category="firearms packs" data-name="m4a1" data-href="models/ars/m4a1/index.html">
+            <a class="asset-link" href="models/ars/m4a1/index.html" aria-label="Open M4A1 product page">
+              <img src="assets/images/AR15/main.png" alt="M4A1 3D asset">
+            </a>
+            <div class="asset-body">
+              <div class="asset-topline">
+                <span>Featured</span>
+                <strong>$10</strong>
+              </div>
+              <h3><a href="models/ars/m4a1/index.html">M4A1</a></h3>
+              <p>Modular tactical rifle asset with clean UVs, separated parts, PBR materials, and placeholder engine export package.</p>
+              <ul class="spec-list">
+                <li>FBX / OBJ / Blend</li>
+                <li>4K Albedo, Normal, Roughness</li>
+                <li>Three LOD placeholders</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button details-action" href="models/ars/m4a1/index.html">View Page</a>
+                <button class="button card-action" type="button" data-add-cart data-name="M4A1" data-price="10" data-url="models/ars/m4a1/index.html">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="asset-card" data-category="armor tactical vest" data-name="simple plate carrier armored vest" data-href="models/armor/Vests/SimplePlateCarrier/index.html">
+            <a class="asset-link" href="models/armor/Vests/SimplePlateCarrier/index.html" aria-label="Open Simple Plate Carrier product page">
+              <img src="models/armor/Vests/SimplePlateCarrier/assets/Main.png" alt="Simple Plate Carrier 3D armor asset">
+            </a>
+            <div class="asset-body">
+              <div class="asset-topline">
+                <span>Armor</span>
+                <strong>$2</strong>
+              </div>
+              <h3><a href="models/armor/Vests/SimplePlateCarrier/index.html">Simple Plate Carrier</a></h3>
+              <p>Lightweight tactical vest asset for FPS characters, loadout menus, armory props, and military kitbash scenes.</p>
+              <ul class="spec-list">
+                <li>GLB product preview</li>
+                <li>Front and secondary renders</li>
+                <li>Character loadout ready</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button details-action" href="models/armor/Vests/SimplePlateCarrier/index.html">View Page</a>
+                <button class="button card-action" type="button" data-add-cart data-name="Simple Plate Carrier" data-price="2" data-url="models/armor/Vests/SimplePlateCarrier/index.html">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="asset-card" data-category="attachments optic red dot ar sight" data-name="ar red dot sight ar15 optic attachment" data-href="models/attachments/AR15RedDot/index.html">
+            <a class="asset-link" href="models/attachments/AR15RedDot/index.html" aria-label="Open AR Red Dot Sight product page">
+              <img src="models/attachments/AR15RedDot/assets/main.png" alt="AR Red Dot Sight 3D attachment asset">
+            </a>
+            <div class="asset-body">
+              <div class="asset-topline">
+                <span>Attachment</span>
+                <strong>$1</strong>
+              </div>
+              <h3><a href="models/attachments/AR15RedDot/index.html">AR Red Dot Sight</a></h3>
+              <p>Compact optic attachment for AR-platform loadouts, FPS prototypes, armory renders, and tactical kitbash scenes.</p>
+              <ul class="spec-list">
+                <li>GLB / OBJ buy boxes</li>
+                <li>main.png storefront preview</li>
+                <li>prev1.png and prev2.png angles</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button details-action" href="models/attachments/AR15RedDot/index.html">View Page</a>
+                <button class="button card-action" type="button" data-add-cart data-name="AR Red Dot Sight" data-price="1" data-url="models/attachments/AR15RedDot/index.html">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="asset-card" data-category="handguns firearms pistol sidearm glock extended magazine" data-name="glock19x ext 24rnd handgun pistol sidearm" data-href="models/handguns/Glock19x EXT/index.html">
+            <a class="asset-link" href="models/handguns/Glock19x EXT/index.html" aria-label="Open Glock19x EXT product page">
+              <img src="models/handguns/Glock19x EXT/assets/main.png" alt="Glock19x EXT 24rnd Mag 3D handgun asset">
+            </a>
+            <div class="asset-body">
+              <div class="asset-topline">
+                <span>Handgun</span>
+                <strong>$5</strong>
+              </div>
+              <h3><a href="models/handguns/Glock19x EXT/index.html">Glock19x EXT</a></h3>
+              <p>Extended-mag handgun asset for tactical loadouts, FPS prototypes, inventory renders, and armory scenes.</p>
+              <ul class="spec-list">
+                <li>GLB / OBJ buy boxes</li>
+                <li>main.png preview slot</li>
+                <li>prev1.png secondary slot</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button details-action" href="models/handguns/Glock19x EXT/index.html">View Page</a>
+                <button class="button card-action" type="button" data-add-cart data-name="Glock19x EXT" data-price="5" data-url="models/handguns/Glock19x EXT/index.html">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="asset-card" data-category="armor template" data-name="empty armor placeholder vest helmet plate carrier" data-href="models/armor/empty/index.html">
+            <a class="asset-link" href="models/armor/empty/index.html" aria-label="Open Empty Armor product page">
+              <div class="asset-placeholder">ARMOR</div>
+            </a>
+            <div class="asset-body">
+              <div class="asset-topline">
+                <span>Armor</span>
+                <strong>COMING SOON</strong>
+              </div>
+              <h3><a href="models/armor/empty/index.html">PROJECT IN PROGRESS</a></h3>
+              <p>Template product page for a future armor asset. Add main.png, prev1.png, final copy, and Payhip snippets later.</p>
+              <ul class="spec-list">
+                <li>GLB / OBJ buy boxes</li>
+                <li>main.png preview slot</li>
+                <li>prev1.png secondary slot</li>
+              </ul>
+              <div class="card-actions">
+                <a class="button details-action" href="models/armor/empty/index.html">View Page</a>
+                <button class="button card-action" type="button" data-add-cart data-name="Empty Armor" data-price="0" data-url="models/armor/empty/index.html">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section pipeline" id="pipeline">
+        <div class="section-heading">
+          <p class="eyebrow">Developer details</p>
+          <h2>Asset pages can show exactly what buyers need.</h2>
+        </div>
+        <div class="pipeline-grid">
+          <article>
+            <span>01</span>
+            <h3>Production Specs</h3>
+            <p>Display triangle counts, texture sizes, object scale, file formats, material workflow, rigging status, and LOD support.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Engine Readiness</h3>
+            <p>Mark Unreal, Unity, Blender, and generic FBX compatibility so developers know what they are buying before checkout.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Protected Delivery</h3>
+            <p>Checkout can route through a platform like Payhip so buyers receive files after payment without exposing raw model links on the storefront.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section license" id="license">
+        <div>
+          <p class="eyebrow">License & Support</p>
+          <h2>Digital assets for games, renders, and prototypes.</h2>
+          <p>3DMODSHOP models may be used in personal and commercial creative projects, including games, cinematics, renders, and prototypes. Redistribution, resale, re-uploading, or repackaging of the original model files is not allowed. Purchased files are delivered through the checkout provider, and support is available for download or file-format issues.</p>
+        </div>
+        <a class="button primary" href="mailto:support@example.com">Contact Support</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>3DMODSHOP</strong>
+      <span>Digital 3D assets for games, cinematics, and prototypes.</span>
+      <span>© 2026 3DMODSHOP. All product names are placeholders.</span>
+    </footer>
+  </div>
+
+  <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true" data-cart-drawer>
+    <div class="cart-panel">
+      <div class="cart-head">
+        <div>
+          <span class="eyebrow">Cart</span>
+          <h2>Asset Loadout</h2>
+        </div>
+        <button class="icon-button" type="button" aria-label="Close cart" data-cart-close>×</button>
+      </div>
+      <div class="cart-items" data-cart-items>
+        <p class="empty-cart">No assets added yet.</p>
+      </div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong data-cart-total>$0</strong>
+      </div>
+      <button class="button primary checkout" type="button" data-checkout>Checkout</button>
+      <p class="cart-note" data-cart-note>Checkout happens on each product page through protected Payhip delivery.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
