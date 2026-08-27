@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Red Dot Sight | 3DMODSHOP</title>
+  <meta name="description" content="AR Red Dot Sight 3D attachment product page for 3DMODSHOP with preview images, asset specs, pricing, and buy placeholders.">
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="model.css?v=mobile-qa-1">
+</head>
+<body>
+  <header class="model-header">
+    <a class="brand" href="../../../index.html">
+      <span>3D</span>
+      <strong>3DMODSHOP</strong>
+    </a>
+    <nav>
+      <a href="../../../index.html#assets">Shop</a>
+      <a href="../../../index.html#categories">Categories</a>
+      <a href="../../../index.html#license">License</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ATTACHMENTS / OPTIC</p>
+        <h1>AR Red Dot Sight</h1>
+        <p class="lead">A compact red dot optic asset for AR-platform loadouts, FPS prototypes, armory renders, and tactical kitbash scenes.</p>
+        <div class="price-badge">
+          <span>Model Price</span>
+          <strong>$1</strong>
+        </div>
+        <div class="buy-row">
+          <a href="https://payhip.com/b/SVFz1" class="payhip-buy-button asset-buy-button" data-target-variant="1787814198232" data-theme="grey" data-product="SVFz1">Buy GLB</a>
+          <a href="https://payhip.com/b/SVFz1" class="payhip-buy-button asset-buy-button" data-target-variant="1787814211429" data-theme="grey" data-product="SVFz1">Buy OBJ</a>
+        </div>
+      </div>
+
+      <figure class="hero-image">
+        <div id="redDotViewer" class="model-stage" role="img" aria-label="Interactive AR Red Dot Sight 3D model preview">
+          <img src="assets/main.png" alt="" aria-hidden="true">
+          <div id="redDotLoading" class="model-progress">
+            <span>Loading 3D preview</span>
+          </div>
+        </div>
+        <figcaption>AR Red Dot Sight interactive model preview</figcaption>
+      </figure>
+    </section>
+
+    <section class="preview-strip">
+      <figure>
+        <img src="assets/prev1.png" alt="AR Red Dot Sight secondary preview">
+        <figcaption>Secondary asset preview</figcaption>
+      </figure>
+      <article>
+        <p class="eyebrow">Asset Notes</p>
+        <h2>Low-profile optic detail.</h2>
+        <p>Use this sight as a clean attachment piece for modern rifle renders, first-person weapon mockups, and inventory screens. The buy boxes are ready for final Payhip snippets when you add them.</p>
+      </article>
+    </section>
+
+    <section class="preview-strip">
+      <figure>
+        <img src="assets/prev2.png" alt="AR Red Dot Sight third preview">
+        <figcaption>Additional asset preview</figcaption>
+      </figure>
+      <article>
+        <p class="eyebrow">Presentation</p>
+        <h2>Built for storefront previews.</h2>
+        <p>The product page uses the same layout as the other shop posts, with large imagery up front and secondary angles below for quick inspection.</p>
+      </article>
+    </section>
+
+    <section class="details-grid">
+      <article>
+        <p class="eyebrow">Use Case</p>
+        <h2>Optic attachment asset.</h2>
+        <p>Use this red dot sight for AR-platform builds, tactical props, FPS weapon customization screens, and loadout render scenes.</p>
+      </article>
+
+      <article>
+        <p class="eyebrow">Asset Build</p>
+        <h2>Included Specs</h2>
+        <ul class="spec-list">
+          <li>Formats: GLB and OBJ placeholders</li>
+          <li>Preview images: main.png, prev1.png, and prev2.png</li>
+          <li>Category: attachments</li>
+          <li>License: commercial game asset placeholder</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="loadout-panel">
+      <div>
+        <p class="eyebrow">Model Directory</p>
+        <h2>AR Red Dot Sight page</h2>
+        <p>This page lives at <code>models/attachments/AR15RedDot/</code> with product preview images inside <code>assets/</code>.</p>
+      </div>
+      <a class="back-link" href="../../../index.html">Back to storefront</a>
+    </section>
+  </main>
+  <script src="assets/three.min.js"></script>
+  <script src="assets/OrbitControls.js"></script>
+  <script src="assets/GLTFLoader.js"></script>
+  <script src="assets/red-dot-glb-data.js"></script>
+  <script src="assets/red-dot-viewer.js"></script>
+  <script>
+    (() => {
+      const compactPayhipButtons = () => {
+        document.querySelectorAll(".asset-buy-button").forEach((button) => {
+          button.style.setProperty("display", "inline-flex", "important");
+          button.style.setProperty("box-sizing", "border-box", "important");
+          button.style.setProperty("width", "8.6rem", "important");
+          button.style.setProperty("min-width", "0", "important");
+          button.style.setProperty("max-width", "8.6rem", "important");
+          button.style.setProperty("height", "3rem", "important");
+          button.style.setProperty("min-height", "3rem", "important");
+          button.style.setProperty("max-height", "3rem", "important");
+          button.style.setProperty("align-items", "center", "important");
+          button.style.setProperty("justify-content", "center", "important");
+          button.style.setProperty("padding", "0", "important");
+          button.style.setProperty("line-height", "1", "important");
+          button.style.setProperty("overflow", "hidden", "important");
+        });
+      };
+
+      window.addEventListener("load", compactPayhipButtons);
+      setTimeout(compactPayhipButtons, 600);
+      setTimeout(compactPayhipButtons, 1800);
+    })();
+  </script>
+</body>
+</html>
